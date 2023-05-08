@@ -1,10 +1,17 @@
 import React from "react"
 
 class Welcome extends React.Component {
-    super(props) {} 
     render() {
-        return <p>Welcome, {this.props.name || "tell me your name"}!</p>
+        return (
+            <>
+                <p>Welcome, {this.props.name}!</p>
+            </>
+        )
     }
 }
+
+Welcome.defaultProps = {
+    name: "Andrea",
+  }
 
 export default Welcome;
