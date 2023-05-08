@@ -4,7 +4,7 @@ import Welcome from "./components/Welcome";
 function App() {
   return (
     <>
-      <Welcome  name=""/>
+      <Welcome  name="Andrea" age={29} />
     </>
   );
 }
