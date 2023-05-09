@@ -1,10 +1,10 @@
 import React from "react";
-import Welcome from "./components/Welcome";
+import Counter from "./components/Counter";
 
 function App() {
   return (
     <>
-      <Welcome name= "John" />
+      <Counter />
     </>
   );
 }
