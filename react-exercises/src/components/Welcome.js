@@ -6,14 +6,10 @@ class Welcome extends React.Component {
         return (
             <>
                 <p>Welcome, <strong>{this.props.name}</strong>!</p>
-                <Age />
+                <Age age={this.props.age}/>
             </>
         )
     }
-}
-
-Welcome.defaultProps = {
-    name: "Andrea",
 }
 
 export default Welcome;
