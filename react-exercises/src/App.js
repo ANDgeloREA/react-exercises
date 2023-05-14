@@ -1,10 +1,10 @@
 import React from "react";
-import Counter from "./components/Counter";
+import ClickCounter from "./components/ClickCounter";
 
 function App() {
   return (
     <>
-      <Counter />
+      <ClickCounter />
     </>
   );
 }
