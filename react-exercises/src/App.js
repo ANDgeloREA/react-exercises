@@ -1,10 +1,10 @@
 import React from "react";
-import Login from "./components/Login";
+import UncontrolledLogin from "./components/UncontrolledLogin";
 
 function App() {
   return (
     <>
-      <Login />
+      <UncontrolledLogin />
     </>
   );
 }
