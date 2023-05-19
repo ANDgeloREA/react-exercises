@@ -1,9 +1,8 @@
-import { useState, useRef } from "react"
+import { useState } from "react"
 
-const TodoList = () => {
+const TodoList = (props) => {
     const [items, setItems] = useState([])
     const [value, setValue] = useState("")
-    const index = useRef();
 
     const handleClick = (event) => {
         event.preventDefault()
@@ -34,8 +33,8 @@ const TodoList = () => {
                 <button type="submit" onClick={handleClick}>Add to list</button>
                 <button type="submit" onClick={handleReset}>Reset list</button>
             </form>
-            <ul>
-                {items.map((item, index) => { return (<li key={index} index={index}>{item} <button onClick={() => handleDelete(index)}>Delete</button></li>) })}
+            <ul>{props.render(items, handleDelete)}
+                {/* {items.map((item, index) => { return (<li key={index} index={index}>{item} <button onClick={() => handleDelete(index)}>Delete</button></li>) })} */}
             </ul>
         </>
     )
