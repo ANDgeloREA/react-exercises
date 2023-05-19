@@ -10,6 +10,12 @@ const TodoList = () => {
         setValue("")
     }
 
+    const handleReset = (event) => {
+        event.preventDefault()
+        setItems([])
+        setValue("")
+    }
+
     const handleInputChange = (event) => {
         setValue(event.target.value)
     }
@@ -19,6 +25,7 @@ const TodoList = () => {
             <form>
                 <input type="text" value={value} onInput={handleInputChange} />
                 <button type="submit" onClick={handleClick}>Add to list</button>
+                <button type="submit" onClick={handleReset}>Reset list</button>
             </form>
             <ul>
                 {items.map((item, index) => { return (<li key={index}>{item}</li>) })}
