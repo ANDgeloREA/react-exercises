@@ -1,9 +1,9 @@
-import Login from "./components/Login";
+import ClickCounter from "./components/ClickCounter";
 
 const App = () => {
   return (
     <>
-      <Login />
+      <ClickCounter />
     </>
   );
 }
