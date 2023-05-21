@@ -1,9 +1,9 @@
-import GithubUser from "./components/GithubUser";
+import CarForm from "./components/CarForm";
 
 const App = () => {
   return (
     <>
-      <GithubUser username="ANDgeloREA" />
+      <CarForm />
     </>
   );
 }
