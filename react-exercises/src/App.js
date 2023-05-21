@@ -1,9 +1,9 @@
-import Login from "./components/Login";
+import GithubUser from "./components/GithubUser";
 
 const App = () => {
   return (
     <>
-      <Login />
+      <GithubUser username="ANDgeloREA" />
     </>
   );
 }
