@@ -1,9 +1,9 @@
-import ClickCounter from "./components/ClickCounter";
+import Counter from "./components/Counter";
 
 const App = () => {
   return (
     <>
-      <ClickCounter />
+      <Counter />
     </>
   );
 }
