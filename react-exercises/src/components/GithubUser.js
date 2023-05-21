@@ -1,11 +1,17 @@
 import { useGithubUser } from "../hooks/useGithubUser"
 
 const GithubUser = ({ username }) => {
-    const { data } = useGithubUser(username)
+    const { data, loading, error } = useGithubUser(username)
 
     return (
         <>
-            {data && <h1>{data.name}</h1>}
+            {data && (
+                <div>
+                    {loading && <h1>Loading</h1>}
+                    {error && <h1>Error</h1>}
+                    <h1>{data.name}</h1>
+                </div>
+            )}
         </>
     )
 }
