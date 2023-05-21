@@ -1,9 +1,9 @@
-import ClickCounter from "./components/ClickCounter";
+import FilteredList from './components/FilteredList';
 
 const App = () => {
   return (
     <>
-      <ClickCounter />
+      <FilteredList />
     </>
   );
 }
