@@ -1,11 +1,14 @@
-import FilteredList from './components/FilteredList';
+import { Routes, Route } from "react-router-dom";
+import Counter from "./components/Counter";
 
 const App = () => {
   return (
     <>
-      <FilteredList />
+      <Routes>
+        <Route path="/counter" element={<Counter />} />
+      </Routes>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
