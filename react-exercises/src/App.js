@@ -1,9 +1,9 @@
-import GithubUserList from "./components/GithubUserList";
+import ClickCounter from "./components/ClickCounter";
 
 const App = () => {
   return (
     <>
-      <GithubUserList />
+      <ClickCounter />
     </>
   );
 }
