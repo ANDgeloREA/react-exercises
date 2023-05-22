@@ -1,10 +1,11 @@
 import { useGithubUser } from "../hooks/useGithubUser"
 
 const GithubUser = ({ username }) => {
-    const { data, error } = useGithubUser(username)
+    const { data, error, fetchData } = useGithubUser(username)
 
     return (
         <>
+            <button onClick={fetchData}>Fetch Data</button>
             {error && <h1>Error</h1>}
             {data && <h1>{data.name}</h1>}
         </>
